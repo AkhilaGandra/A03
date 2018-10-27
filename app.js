@@ -5,6 +5,7 @@ const bodyParser = require("body-parser") // simplifies access to request body
 const fs = require('fs')  // NEW - this is required
 const app = express()  // make express app
 const http = require('http').Server(app)  // inject app into the server
+const port=process.env.PORT||8081
 
 // ADD THESE COMMENTS AND IMPLEMENTATION HERE 
 // 1 set up the view engine
