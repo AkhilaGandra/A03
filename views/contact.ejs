@@ -1,0 +1,46 @@
+
+<% include header%>
+<link rel="stylesheet" href="css/abc.css" type="text/css">
+<header class="Header">Contact details</header>
+<div class="container">
+    <a href="https://www.linkedin.com/in/akhila-gandra-13022a170/"> click here - redirect to linkedIn<img width="50"
+            height="50" src="images/Linkedin2.png" alt="Linkedin"> </a><br>
+    <a href="https://github.com/AkhilaGandra">click here - redirect to github<img width="50" height="50" src="images/git.jpg"
+            alt="images/githubin"></a><br>
+    <a href="https://bitbucket.org/Akhila_Gandra/">click here - redirect to bitbucket<img width="50" height="50"
+            src="images/bitbucket.png" alt="bitbucketin"></a> <br>
+<form>
+    <br>
+    <br>
+    firstname:<br>
+
+    <input type="text" name="firstname" value="" required>
+    <br>
+    lastname:<br>
+    <input type="text" name="lastname" required>
+    <br>
+    <input type="radio" name="gender" value="male">Male<br>
+    <input type="radio" name="gender" value="female" checked>female <br>
+    
+    <textarea name message rows="4" cols="8">Any Questions??</textarea>
+    <div class="form-group row">
+        <label for="inputEmail" class="col-sm-3 col-form-label">
+            <p id="email"><strong>Email</strong></p>
+        </label>
+        <div class="col-sm-3">
+            <input type="email" class="form-control" id="inputEmail" placeholder="@ex.com" pattern=".+gmail.com" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPhone" class="col-sm-3 col-form-label">
+            <p id="phone"><strong>Phone</strong></p>
+        </label>
+        <div class="col-sm-3">
+            <input type="phone" class="form-control" id="inputPhone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+    </div>
+    <button type="button" onclick="alert('This is new form')">Reset</button>
+    <button type="submit">Submit=</button>
+</form>
+</div>
+<% include footer%>

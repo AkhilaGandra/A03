@@ -1,0 +1,28 @@
+ body{
+
+        font-family: "Geogia", "Times New Roman", Times, serif;
+        font-style: italic;
+        
+        border-color:black;
+        border-width: 1px;
+
+       
+        background-image: url(FBG19.jpg);
+        background-size: 100%;
+       
+
+}
+.section-header{
+    text-align:center;
+}
+.present-section{
+   background-color: blue;
+}
+.last{
+    text-align:center;
+}
+
+.navbar-toggler-icon{
+    align-items:left;
+    
+}
