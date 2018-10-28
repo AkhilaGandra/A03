@@ -11,6 +11,8 @@ function show(number) {
         }
      
       document.getElementById("result").innerHTML="The factorial is "+fact;
+      console.fact(fact);
         return fact;
     }
+        //console.log(fact);
 }
