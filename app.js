@@ -46,8 +46,8 @@ app.get("/", function (req, res) {
    
    
    // 4 http GET /tic-tac-toe
-   app.get("/tic-tac-toe", function (req, res) {
-    res.render("tic-tac-toe.ejs")
+   app.get("/Tic", function (req, res) {
+    res.render("Tic.ejs")
    })
    
    // 4 http GET /about
