@@ -9,7 +9,7 @@ function show(number) {
         for (num = 1; num <= no; num++) {
             fact = fact * num;
         }
-      
+      alert(fact);
         return fact;
     }
 }
