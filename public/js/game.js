@@ -3,10 +3,11 @@ function show(number) {
     fact = 1;
     no = parseInt(number);
     if (no < 0) {
-        alert(-1);
+       
         return -1;
-    } else {
-        for (num = 1; num <= no; num++) {
+    } 
+    else {
+        for (num = 1; num <= no; num++) 
             fact = fact * num;
            }
      
@@ -14,4 +15,4 @@ function show(number) {
       console.fact(fact);
         return fact;
     }
-}
+
