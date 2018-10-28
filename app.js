@@ -62,21 +62,37 @@ app.get("/", function (req, res) {
 
    // 5 http POST /contact
    app.post("/contact",function(req,res){
-       const name=req.body.inputname;
-       const email=req.body.inputemail;
-       const company=req.body.inputcompany;
-       const comment=req.body.inputcomment;
-       const isError=true;
-
-       const mailOptions={
-           from: '"Denise Case"<denisecase@gmail.com>',
-           to: 'dcase@nwmissouri.edu,denisecase@gmail.com',
-           subject:'Message from Website Contact page',
-           text:comment,
-           err:isError
+    var api_key = '0340b1480392852edd67b2a85984007a-4836d8f5-9a557505';
+    var domain = 'sandboxb00e10943b6d42f4a64c103347dbd494.mailgun.org';
+    var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+    const name=req.body.firstname;
+    const lname=req.body.lastname;
+    const email=req.body.email;
+    const g1=req.body.gender;
+    const gender=req.body.gender;
     
-       }
-       console.log('\nCONTACT FORM DATA: '+name+' '+email+' '+comment+'\n');
+    const comment=req.body.comment;
+    
+    const phone=req.body.inputPhone;
+    const isError=true;
+    var data = {
+      from: 'postmaster@sandboxb00e10943b6d42f4a64c103347dbd494.mailgun.org',
+      to: 'akhila.gandra08@gmail.com',
+      subject: lname+ 'has sent you a message',
+      html: "<b>Email</b>" +email
+    };
+     
+    mailgun.messages().send(data, function (error, body) {
+      console.log(body);
+      
+      console.log('\nCONTACT FORM DATA: '+name+' '+email+' '+comment+'\n');
+      if(!error)
+      alert("message sent")
+      else
+      alert("there is an error ,message not sent")
+    });
+
+
     })
 
 
