@@ -73,12 +73,12 @@ app.get("/", function (req, res) {
     
     const comment=req.body.comment;
     
-    const phone=req.body.inputPhone;
+    const phone=req.body.phone;
     const isError=true;
     var data = {
       from: 'postmaster@sandboxb00e10943b6d42f4a64c103347dbd494.mailgun.org',
       to: 'akhila.gandra08@gmail.com',
-      subject: lname+ 'has sent you a message',
+      subject: lname + ' has sent you a message',
       html: "<b>Email</b>" +email
     };
      
@@ -87,9 +87,9 @@ app.get("/", function (req, res) {
       
       console.log('\nCONTACT FORM DATA: '+name+' '+email+' '+comment+'\n');
       if(!error)
-      alert("message sent")
+      res.alert("message sent")
       else
-      alert("there is an error ,message not sent")
+      res.alert("there is an error ,message not sent")
     });
 
 

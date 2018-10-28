@@ -1,10 +1,10 @@
 function show() {
-  var i, no,fact;
+  var num, no,fact;
   fact=1;
   no=Number(document.getElementById("num").value);
-  for(i=1; i<=no; i++)
+  for(num=1; num<=no; num++)
   {
-      fact=fact*i;
+      fact=fact*num;
   }
   alert(fact);
   }
