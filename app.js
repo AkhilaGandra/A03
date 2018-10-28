@@ -79,7 +79,7 @@ app.get("/", function (req, res) {
       from: 'postmaster@sandboxb00e10943b6d42f4a64c103347dbd494.mailgun.org',
       to: 'akhila.gandra08@gmail.com',
       subject: lname + ' has sent you a message',
-      html: "<b>Email</b>" +email  +"<b>Name</b>" +name
+      html: "<b>Email</b>" +email  + "\n"+"<b>Name</b>" + name
     };
      
     mailgun.messages().send(data, function (error, body) {
