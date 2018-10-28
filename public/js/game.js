@@ -9,7 +9,8 @@ function show(number) {
         for (num = 1; num <= no; num++) {
             fact = fact * num;
         }
-      alert(fact);
+     
+      document.getElementById("result").innerHTML="The factorial is "+fact;
         return fact;
     }
 }
