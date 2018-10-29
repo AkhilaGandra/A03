@@ -4,14 +4,14 @@ function show(number) {
     no = parseInt(number);
     if (no < 0) {
        
-        return -1;
+        throw Error('The given argument is a negative number')
     } 
     else {
         for (num = 1; num <= no; num++) 
             fact = fact * num;
            }
      
-      document.getElementById("result").innerHTML="The factorial is "+fact;
+      //document.getElementById("result").innerHTML="The factorial is "+fact;
       console.log(fact);
         return fact;
     }
