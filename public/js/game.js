@@ -11,7 +11,7 @@ function show(number) {
             fact = fact * num;
            }
      
-      //document.getElementById("result").innerHTML="The factorial is "+fact;
+      document.getElementById("result").innerHTML="The factorial is "+fact;
       console.log(fact);
         return fact;
     }
